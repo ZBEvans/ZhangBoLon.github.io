@@ -178,7 +178,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>git配置</strong><br>git config –global user.name =”姓名”<br>git config –global user.email =”邮箱”</p>
+        <p><strong>生成公钥</strong><br>ssh-keygen -t rsa</p>
+<p><strong>创建裸仓库</strong><br>git init –bare</p>
+<p><strong>git配置</strong><br>git config –global user.name =”姓名”<br>git config –global user.email =”邮箱”</p>
 <p><strong>git命令</strong><br>git status  –&gt;查询状态<br>git add *  –&gt;全部添加到暂存区<br>git commit -a -m “提交信息”   –&gt;提交到仓库<br>git push origin ht ： wjt   从ht推送到 wjt&gt;推送到分支<br>git pull origin wjt ： ht   从 wjt 获取信息 到 ht<br>git fetch -p              //查询分支创建删除等状态<br>git fetch origin wjt:temp  从wjt中获取信息并建立temp分支并放在其中,<br>git diff  分支–&gt;查找改的不同<br>git diff 本地分支  origin/远程分支<br>git diff 文件全路径     //查看修改部分<br>git branch 名   –&gt;建立分支<br>git blame file_name –&gt; 查看每一行是谁写的<br>git reset – .     –&gt;  从暂存区恢复到工作文件<br>git checkout .   –&gt;放弃为暂存的<br>git clean  .        –&gt; 放弃未追踪文件<br>git clean . -df  –&gt; 放弃新增删除的文件 例如: commit 后 打代码,,,<br>git checkout .  返回到commit后<br>git checkout 分支名称  –&gt;切换分支<br>git push origin  -f  强行<br>git log 分支名 ^ 分支名    比较<br>git remote -v 查看远程仓库地址</p>
 
       
