@@ -9,13 +9,14 @@
   <title>centos7中安装svn服务器 | 波叔|BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="最近波叔在学习git的时候发现很多教程或者大牛提到git都会对比svn，所以出于好奇（这个好奇心，对于linux小白的我来说花费近四个小时才搞定的），小编熬夜将一路历程分享出来。 小编先说明一下我搭建的svn服务器的环境 1、使用的是VMware 14的虚拟机 虚拟机下载路径：https://my.vmware.com/cn/web/vmware/details?downloadGroup=WKS">
+<meta name="keywords" content="linux centos,centos7,svn服务器,svn,svn配置">
 <meta property="og:type" content="article">
 <meta property="og:title" content="centos7中安装svn服务器">
 <meta property="og:url" content="http://yoursite.com/2018/12/01/centos7下安装svn服务器/index.html">
 <meta property="og:site_name" content="波叔|BLOG">
 <meta property="og:description" content="最近波叔在学习git的时候发现很多教程或者大牛提到git都会对比svn，所以出于好奇（这个好奇心，对于linux小白的我来说花费近四个小时才搞定的），小编熬夜将一路历程分享出来。 小编先说明一下我搭建的svn服务器的环境 1、使用的是VMware 14的虚拟机 虚拟机下载路径：https://my.vmware.com/cn/web/vmware/details?downloadGroup=WKS">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-01T13:02:24.990Z">
+<meta property="og:updated_time" content="2018-12-01T13:20:13.106Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="centos7中安装svn服务器">
 <meta name="twitter:description" content="最近波叔在学习git的时候发现很多教程或者大牛提到git都会对比svn，所以出于好奇（这个好奇心，对于linux小白的我来说花费近四个小时才搞定的），小编熬夜将一路历程分享出来。 小编先说明一下我搭建的svn服务器的环境 1、使用的是VMware 14的虚拟机 虚拟机下载路径：https://my.vmware.com/cn/web/vmware/details?downloadGroup=WKS">
@@ -183,8 +184,8 @@
         <p>最近波叔在学习git的时候发现很多教程或者大牛提到git都会对比svn，所以出于好奇（这个好奇心，对于linux小白的我来说花费近四个小时才搞定的），小编熬夜将一路历程分享出来。</p>
 <p>小编先说明一下我搭建的svn服务器的环境</p>
 <p>1、使用的是VMware 14的虚拟机</p>
-<p>虚拟机下载路径：<a href="https://my.vmware.com/cn/web/vmware/details?downloadGroup=WKST-1502-WIN&amp;productId=799&amp;rPId=28909" target="_blank" rel="noopener">https://my.vmware.com/cn/web/vmware/details?downloadGroup=WKST-1502-WIN&amp;productId=799&amp;rPId=28909</a>，点击立即下载按钮即可开始。</p>
-<p>安装成功后，打开VM，提示需要序列号，将下方任意序列号复制进去即可，如过序列号不能使用，小伙伴们问度娘吧<br> <a id="more"></a><br>虚拟机序列号：</p>
+<p>虚拟机下载路径：<a href="https://my.vmware.com/cn/web/vmware/details?downloadGroup=WKST-1502-WIN&amp;productId=799&amp;rPId=28909" target="_blank" rel="noopener">https://my.vmware.com/cn/web/vmware/details?downloadGroup=WKST-1502-WIN&amp;productId=799&amp;rPId=28909</a>，点击立即下载按钮即可开始。<br> <a id="more"></a><br>安装成功后，打开VM，提示需要序列号，将下方任意序列号复制进去即可，如过序列号不能使用，小伙伴们问度娘吧</p>
+<p>虚拟机序列号：</p>
 <p>AA702-81D8N-0817Y-75PQT-Q70A4</p>
 <p>YC592-8VF55-M81AZ-FWW5T-WVRV0</p>
 <p>FC78K-FKED6-H88LZ-0QPEE-QP8X6</p>
@@ -231,6 +232,33 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">linux centos</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">centos7</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">svn服务器</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">svn</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">svn配置</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -423,7 +451,43 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">命令</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">git操作</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">波叔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">开启未来</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">linux centos</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">centos7</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">svn服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">svn</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">svn配置</a>
               </li>
             
             <div class="clearfix"></div>
