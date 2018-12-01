@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="波叔|BLOG">
 <meta property="og:description" content="最近波叔在学习git的时候发现很多教程或者大牛提到git都会对比svn，所以出于好奇（这个好奇心，对于linux小白的我来说花费近四个小时才搞定的），小编熬夜将一路历程分享出来。 小编先说明一下我搭建的svn服务器的环境 1、使用的是VMware 14的虚拟机 虚拟机下载路径：https://my.vmware.com/cn/web/vmware/details?downloadGroup=WKS">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-01T13:26:43.033Z">
+<meta property="og:updated_time" content="2018-12-01T13:48:42.721Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="centos7中安装svn服务器">
 <meta name="twitter:description" content="最近波叔在学习git的时候发现很多教程或者大牛提到git都会对比svn，所以出于好奇（这个好奇心，对于linux小白的我来说花费近四个小时才搞定的），小编熬夜将一路历程分享出来。 小编先说明一下我搭建的svn服务器的环境 1、使用的是VMware 14的虚拟机 虚拟机下载路径：https://my.vmware.com/cn/web/vmware/details?downloadGroup=WKS">
@@ -199,6 +199,7 @@
 <p>5、下载小乌龟客户端：<a href="http://www.onlinedown.net/soft/989530.htm" target="_blank" rel="noopener">http://www.onlinedown.net/soft/989530.htm</a></p>
 <p>小伙伴们走完上面的步骤可能觉得怎么这么麻烦。如果你够壕可以去阿里云、百度云、华为云等服务器商租一个服务器，你只需要下载一个FTP的软件，你就可以在上面驰骋了，废话不多说了，下面开始吧</p>
 <p>启动登录centos7中，在桌面右击鼠标，选择打开终端<br>输入命令：ip addr ，即可查看ip</p>
+<p><a href="https://github.com/ZhangBoLon/ZhangBoLon.github.io/blob/master/img/blogimg/1.png" target="_blank" rel="noopener">https://github.com/ZhangBoLon/ZhangBoLon.github.io/blob/master/img/blogimg/1.png</a></p>
 <p>可能有小伙伴问都已经有GUI了，为森莫还用FTP连接，小编在这很抱歉，我还没找到从外部查看桥接模式下正确的ip地址。知道的小伙伴可以省略上面的步骤。<br>使用putty连接centos7，ip地址就输入刚才查到的（小伙伴们这里输入自己的IP地址哦）。这里小伙伴可以在Saved Session栏输入一个名字，点击Save，可以将这次的记录保存下来，方便下次使用时不用再去输ip了。<br>连接成功后，会要求输入用户名和密码，这里小伙伴使用root登录。</p>
 <p>准备工作结束，下面开始在这个服务器上驰骋了</p>
 <p>1、输入命令：sudo yum install subversion，开始安装svn服务器，在这过程中会要求输入一次y,让你确认是否安装</p>
